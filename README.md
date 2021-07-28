@@ -1,4 +1,4 @@
-# rt_live
+# [Rₜ](https://danielcs88.github.io/html/rt.html)
 
 Choropleth map using data from [Epiforecasts.io](https://epiforecasts.io/covid/posts/national/united-states/).
 
