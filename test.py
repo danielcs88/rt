@@ -35,7 +35,7 @@ if latest_date == on_file:
 else:
     print(
         highlight(
-            f"Run: On file data is {on_file}, data online is {latest}",
+            f"Run: On file data is {on_file}, data online is {latest_date}",
             UsdLexer(),
             TerminalTrueColorFormatter(style="dracula"),
         )
