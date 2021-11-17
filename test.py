@@ -16,7 +16,11 @@ latest = pd.read_csv(
 
 
 # %%
-on_file = pd.read_csv("data/rt.csv", parse_dates=["date"], infer_datetime_format=True,)
+on_file = pd.read_csv(
+    "data/rt.csv",
+    parse_dates=["date"],
+    infer_datetime_format=True,
+)
 
 latest_date = sorted(latest["date"].unique())[-1]
 on_file = sorted(on_file["date"].unique())[-1]
