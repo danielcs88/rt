@@ -1,11 +1,11 @@
 # %%
-import pandas as pd
 import subprocess
+
 import numpy as np
+import pandas as pd
 from pygments import highlight
 from pygments.formatters.terminal256 import TerminalTrueColorFormatter
 from pygments.lexers import UsdLexer
-
 
 latest = pd.read_csv(
     "https://raw.githubusercontent.com/epiforecasts/covid-rt-estimates/master/subnational/united-states/cases/summary/rt.csv",
