@@ -254,7 +254,7 @@ fig = px.choropleth(
 fig.layout.font.family = "Arial"
 
 fig.update_layout(
-    title=f"Rₜ: COVID-19 | United States",
+    title="Rₜ: COVID-19 | United States",
     annotations=[
         dict(
             xanchor="right",
@@ -271,7 +271,7 @@ fig.update_layout(
 fig.show()
 
 # %%
-with open("../danielcs88.github.io/html/rt.html", "w") as f:
+with open("../danielcs88.github.io/html/rt.html", "w", encoding="utf_8") as f:
     f.write(fig.to_html(include_plotlyjs="cdn"))
 
 
