@@ -234,7 +234,14 @@ fig = px.choropleth(
         (1, "red"),
     ],
     hover_name="state",
-    hover_data=["date", "rt", "lower_90", "upper_90", "cases", "deaths"],
+    hover_data={
+        "date": "|%B %d, %Y",
+        "rt": ":.2f",
+        "lower_90": ":.2f",
+        "upper_90": ":.2f",
+        "cases": ":,",
+        "deaths": ":,",
+    },
     range_color=(0, 2),
     center={"lon": -94.99141861526407, "lat": 38.1354813882185},
     scope="usa",
@@ -252,6 +259,8 @@ fig = px.choropleth(
 
 
 fig.layout.font.family = "Arial"
+
+# fig.update_traces(hovertemplate='GDP: %{x} <br>Life Expectancy: %{y}')
 
 fig.update_layout(
     title="Rₜ: COVID-19 | United States",
